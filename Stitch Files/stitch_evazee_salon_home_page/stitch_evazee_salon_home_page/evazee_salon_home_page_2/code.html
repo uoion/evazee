@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Evazee Salon Home Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;family=Inter+Tight:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec13ec",
+                        "background-light": "#f8f6f8",
+                        "background-dark": "#221022",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "heading": ["Inter Tight", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+        
+        .glass-nav {
+            background: rgba(34, 16, 34, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .glass-card {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-900 dark:text-white antialiased overflow-x-hidden pb-24">
+<!-- Sticky Navigation Bar -->
+<nav class="sticky top-0 z-50 w-full glass-nav border-b border-white/5">
+<div class="flex items-center justify-between p-4 h-16 max-w-md mx-auto w-full">
+<button class="text-white flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+<div class="flex flex-col items-center">
+<h1 class="text-white text-xl font-black tracking-tighter uppercase font-heading">Evazee</h1>
+</div>
+<button class="flex h-9 items-center justify-center rounded-full bg-primary/20 px-4 text-primary text-sm font-bold tracking-wide hover:bg-primary/30 transition-colors">
+                Book
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative w-full h-[65vh] min-h-[500px] flex flex-col justify-end items-center pb-12 overflow-hidden">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat" data-alt="Fashion model with sleek dark hair and neon lighting accents" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAQyyTIpuhQ0pNB1g-DuTfgJo4_55VvxMOJeZAunfEoUAZf2huB-OGoBs5PRhiqcOmd11a6ak6RLq4H3na1vi714N_rNvncgFkWwurDZ8m-kJZBYqLA5VowyAbrCiDDSIFMjK5QVaM06yIlhUUFINvl18GCxOVVdWf-66OLY2WFlNWezxKZt-xBu__WiGsd9e7EYWPfFxBs9yj14-mhdzhcHU_kCIT_gOYR8PmZvC0FynO3R0vWq0lx88LaybwpMR5UfIMuWf5PRio");'>
+</div>
+<!-- Overlays -->
+<div class="absolute inset-0 z-10 bg-gradient-to-t from-background-dark via-background-dark/50 to-transparent"></div>
+<div class="absolute inset-0 z-10 bg-black/20"></div>
+<!-- Content -->
+<div class="relative z-20 flex flex-col items-center text-center px-6 gap-6 max-w-md w-full">
+<div class="flex flex-col gap-2">
+<h2 class="text-white text-4xl font-heading font-bold leading-tight tracking-tight">
+                    Evazee
+                </h2>
+<p class="text-gray-200 text-lg font-medium leading-relaxed tracking-wide">
+                    West Coast Luxury.<br/>Vredenburg Style.
+                </p>
+</div>
+<button class="flex w-full max-w-[280px] cursor-pointer items-center justify-center rounded-lg h-14 px-6 bg-primary text-white text-base font-bold tracking-wide shadow-[0_0_20px_rgba(236,19,236,0.3)] hover:shadow-[0_0_30px_rgba(236,19,236,0.5)] transition-shadow">
+                Book Your Visit
+            </button>
+</div>
+</section>
+<!-- Service Highlights (Carousel) -->
+<section class="py-8 px-4 max-w-md mx-auto w-full">
+<div class="flex items-center justify-between mb-4 px-1">
+<h3 class="text-white text-lg font-bold font-heading">Our Services</h3>
+<span class="text-primary text-sm font-semibold">View All</span>
+</div>
+<div class="flex w-full overflow-x-auto no-scrollbar pb-2 -mx-4 px-4 snap-x">
+<div class="flex min-h-min flex-row items-start justify-start gap-5">
+<!-- Service 1 -->
+<div class="flex flex-col items-center gap-3 w-20 snap-start">
+<div class="w-20 h-20 bg-center bg-no-repeat bg-cover rounded-full ring-2 ring-white/10 p-1" data-alt="Close up of scissors cutting hair texture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBvb4VVyEpn5VFhb0jo3xQdtG8y9kM3XECJrpY2tVLU4PUlLtF4_lOjjFpCsjguW6uMOfeSK1B5EWRxJCF3l6oRgaGuQKbd7L53SLFuxBQXfifkJr1P4LXcqE0eXjSInOFuVQnou436eFPshrOTKPmmvPWYkx0ENeUGAUX08Xe98r-imO2EMZ7DyLh_XC0uztMnPWZnwakSxDlFFT6L0j9dr6F4BnyKeIT_4jE81Fj6rtgLY8hrmiun5f9zaY0OZow66wiZiLJiLBU");'>
+<div class="w-full h-full rounded-full border border-white/20"></div>
+</div>
+<p class="text-gray-300 text-xs font-medium uppercase tracking-wide">Cut</p>
+</div>
+<!-- Service 2 -->
+<div class="flex flex-col items-center gap-3 w-20 snap-start">
+<div class="w-20 h-20 bg-center bg-no-repeat bg-cover rounded-full ring-2 ring-white/10 p-1" data-alt="Woman with vibrant hair dye application" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDAADytpwb_mJUlZ7MH74YOrG_1knTso16aMh1E40A-Fo1jB9Rlal1-HWK9A_UVKoXHwTmkHySDhxrJr0n7hhrdaFm-ep121PMTt_ACW2nGj-iEVEXcskUMkZkZ9IyrdQv4fTCLoHYSAEvjOXmzDIWW4tyt9XZg1HljjzGo89zRYFxMkg0OawBO6_-hXHH-PIClgZWhPIGkaCNnU_ep_VW2YrMH4n5tvF0jd1CKnNLgJfBrhh0GFtIpmmgpDXfwi_p6s32B6ack0tY");'>
+<div class="w-full h-full rounded-full border border-white/20"></div>
+</div>
+<p class="text-gray-300 text-xs font-medium uppercase tracking-wide">Color</p>
+</div>
+<!-- Service 3 -->
+<div class="flex flex-col items-center gap-3 w-20 snap-start">
+<div class="w-20 h-20 bg-center bg-no-repeat bg-cover rounded-full ring-2 ring-white/10 p-1" data-alt="Professional hair styling with blow dryer" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCL5gF3i_pyL3ua7dmCl7TExHMgOH0pD7vBF70ohKMH3s5cyTGPB1AI46nczSREPzI-n2mTr6JVgYo3UU7Kga6glHJmvb7aI_0x_8iVR5CZ-ImK0wCqbjBPCMwWVtE44e84sEoGBn7Wr0xuNLDzxMOkZx_JDUOmi2jYb2tuVL3XoKEvyHoR3fkW_hplnDThx8bV2B2gVSmGwynrB2FGTSRWSAtPqYaJQ472wa56vMKp-vRsC-Ae8eSTPdwHgFJauksdFgfR65x8TT8");'>
+<div class="w-full h-full rounded-full border border-white/20"></div>
+</div>
+<p class="text-gray-300 text-xs font-medium uppercase tracking-wide">Styling</p>
+</div>
+<!-- Service 4 -->
+<div class="flex flex-col items-center gap-3 w-20 snap-start">
+<div class="w-20 h-20 bg-center bg-no-repeat bg-cover rounded-full ring-2 ring-white/10 p-1" data-alt="Relaxing hair treatment spa session" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAYgE9oY169XLbsRNCj0ocv7aqClv1h0m-w1zcZAAoocf-rMAKFLzULvI_1o6tMnDrIxYKerIULiSdFOMxOWQiEMA070xkRNC5ZeMRHm60fhA51h5GSehL-c6VXf3u-XgGCiIDELCN-XRxWbrRXGNySKt2p7htL5EZ-V8iiZQqq2cIvjaflPnbk9P_YKTFTFgphlumV7SECSUq3uPT5p8DnLd1lGYBEJrQJux6EJkbrqPXguJsVTJSSFFZ8t_t_qeOzuLvzEvFYEwE");'>
+<div class="w-full h-full rounded-full border border-white/20"></div>
+</div>
+<p class="text-gray-300 text-xs font-medium uppercase tracking-wide">Care</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section (Card) -->
+<section class="px-4 py-4 max-w-md mx-auto w-full">
+<div class="glass-card rounded-xl overflow-hidden relative shadow-lg">
+<!-- Background with low opacity -->
+<div class="absolute inset-0 bg-cover bg-center z-0 opacity-20" data-alt="Abstract interior of a luxury modern salon" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDa0NKX8QQih45a2ot9Ivoc9Q8xnpz-LRriCW3hG2pf0gSM9hbDUDDhnLrZQz-0o7GDie7up1M6NagxuzQLhLgE3YZGvCTTdMlZTOY0Ryn3wvpunm3Z4LF3W-ARs6vC5j8B3dN456C9w1QYU3qg9Kku2-7vEcKM8cY_i53VQs2pGzWF-oE20BThDa_2C3xgdlvDplAqlhYeJe0K6ol1PNYlx-Sq2-wycW0NDX7WaYHEVu-FL_p2lyW3pG2CRJIeIz8y-UXk5lGdsmk");'>
+</div>
+<div class="relative z-10 p-6 flex flex-col gap-4">
+<div class="flex items-center gap-3 mb-2">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-lg">spa</span>
+</span>
+<h3 class="text-white text-xl font-heading font-bold">The Experience</h3>
+</div>
+<h4 class="text-white text-lg font-semibold leading-tight">
+                    Welcome to Evazee
+                </h4>
+<p class="text-gray-300 text-sm leading-relaxed">
+                    We bring world-class hair artistry to the heart of the Peninsula. Experience personalized care in a sleek, modern setting designed for your ultimate comfort.
+                </p>
+<!-- Location Badge Item -->
+<div class="mt-4 flex items-center gap-3 bg-white/5 rounded-lg p-3 border border-white/5">
+<div class="text-white flex items-center justify-center rounded-lg bg-[#482348] shrink-0 size-10">
+<span class="material-symbols-outlined text-xl">location_on</span>
+</div>
+<div class="flex flex-col">
+<p class="text-white text-sm font-semibold leading-normal">Vredenburg, SA</p>
+<p class="text-gray-400 text-xs font-normal">West Coast Peninsula</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Navigation -->
+<div class="fixed bottom-0 w-full glass-nav border-t border-white/5 z-50">
+<div class="flex justify-around items-center h-20 pb-2 max-w-md mx-auto">
+<button class="flex flex-col items-center justify-center gap-1 w-16 text-primary">
+<span class="material-symbols-outlined text-2xl">home</span>
+<span class="text-[10px] font-medium">Home</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-1 w-16 text-gray-400 hover:text-white transition-colors">
+<span class="material-symbols-outlined text-2xl">content_cut</span>
+<span class="text-[10px] font-medium">Services</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-1 w-16 text-gray-400 hover:text-white transition-colors">
+<span class="material-symbols-outlined text-2xl">photo_library</span>
+<span class="text-[10px] font-medium">Gallery</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-1 w-16 text-gray-400 hover:text-white transition-colors">
+<span class="material-symbols-outlined text-2xl">perm_contact_calendar</span>
+<span class="text-[10px] font-medium">Contact</span>
+</button>
+</div>
+</div>
+</body></html>

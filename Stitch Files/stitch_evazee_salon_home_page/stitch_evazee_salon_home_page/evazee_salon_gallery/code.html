@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Evazee Salon Gallery</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec5b",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#050505", // Adjusted to be darker as per user request for high contrast
+                        "surface-dark": "#121212",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar hiding for horizontal scroll areas */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white overflow-x-hidden transition-colors duration-200">
+<!-- Sticky Header -->
+<header class="sticky top-0 z-50 flex items-center justify-between bg-background-light/90 dark:bg-background-dark/90 px-4 py-3 backdrop-blur-md border-b border-gray-200 dark:border-white/10">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-size: 28px;">content_cut</span>
+<h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">Evazee</h2>
+</div>
+<button class="flex h-10 w-10 items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/10 active:bg-black/10 dark:active:bg-white/20 transition-colors">
+<span class="material-symbols-outlined text-slate-900 dark:text-white">menu</span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="min-h-screen pb-24">
+<!-- Hero Section -->
+<div class="px-4 pt-6 pb-2">
+<h1 class="text-3xl font-bold leading-tight tracking-tight mb-2">Gallery</h1>
+<p class="text-slate-600 dark:text-gray-400 text-base font-normal leading-relaxed">
+                Styles for the West Coast. Real clients, real results.
+            </p>
+</div>
+<!-- Category Filters -->
+<div class="sticky top-[65px] z-40 w-full bg-background-light dark:bg-background-dark py-3 pl-4">
+<div class="flex gap-3 overflow-x-auto no-scrollbar pr-4">
+<!-- Active Pill -->
+<button class="flex h-9 shrink-0 items-center justify-center rounded-full bg-primary px-5 transition-transform active:scale-95 shadow-lg shadow-primary/20">
+<span class="text-slate-900 text-sm font-bold">All</span>
+</button>
+<!-- Inactive Pills -->
+<button class="flex h-9 shrink-0 items-center justify-center rounded-full bg-white dark:bg-surface-dark border border-gray-200 dark:border-white/10 px-5 transition-all active:scale-95 hover:border-primary/50">
+<span class="text-slate-700 dark:text-gray-300 text-sm font-medium">Frizzy Care</span>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center rounded-full bg-white dark:bg-surface-dark border border-gray-200 dark:border-white/10 px-5 transition-all active:scale-95 hover:border-primary/50">
+<span class="text-slate-700 dark:text-gray-300 text-sm font-medium">Bridal</span>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center rounded-full bg-white dark:bg-surface-dark border border-gray-200 dark:border-white/10 px-5 transition-all active:scale-95 hover:border-primary/50">
+<span class="text-slate-700 dark:text-gray-300 text-sm font-medium">Cuts</span>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center rounded-full bg-white dark:bg-surface-dark border border-gray-200 dark:border-white/10 px-5 transition-all active:scale-95 hover:border-primary/50">
+<span class="text-slate-700 dark:text-gray-300 text-sm font-medium">Colour</span>
+</button>
+</div>
+<!-- Fade Overlay on right for scroll hint -->
+<div class="pointer-events-none absolute right-0 top-0 h-full w-12 bg-gradient-to-l from-background-light dark:from-background-dark to-transparent"></div>
+</div>
+<!-- Masonry Grid -->
+<div class="px-4 py-2">
+<div class="columns-2 gap-3 space-y-3">
+<!-- Card 1: Frizz Control -->
+<div class="break-inside-avoid relative group overflow-hidden rounded-xl bg-surface-dark">
+<img alt="Woman with smooth straight hair looking confident" class="h-auto w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Woman with smooth straight hair looking confident" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs4N8ROQSO3hz3vnPhSU4fI2u08bNaOfAoUiVlG031U7cdmLdTB69xJNHd1jeaNz-K2ZFKFmy-Yox9hu29TorJh9UxvgWoxpXJe5gBSqh31Ym0HhCmJ6UnCIK4LaMhvk_lrP3uuFN7b0_HD08a2qT2CTiag9hTM8gpyFhohuer4WoO-BdctaTHy_671DdIsQcFPiCujFuGqjgyT6VlDpw2BKnM9GNloBo1CwCGBe9jlOWqtl7AAYHwdVJ-e7G3zM3X69zAJHm0BHk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3">
+<p class="text-primary text-xs font-bold uppercase tracking-wider mb-1">Treatment</p>
+<h3 class="text-white text-sm font-bold leading-tight">Smoothed Frizz Control</h3>
+</div>
+</div>
+<!-- Card 2: Braids (Taller aspect) -->
+<div class="break-inside-avoid relative group overflow-hidden rounded-xl bg-surface-dark">
+<img alt="Detailed intricate braided hairstyle close up" class="h-auto w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Detailed intricate braided hairstyle close up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn5fox2cH0E4nWQ8wiRkjqtrsB_rECLFriw_ikpCi8wFFJPSE0EBOe3KPTn3wwU91zg_gffnhkKhvmWP-MFTUGmmtXKuq_L5ZZrAi2ueJtq1LUeyyjXIhmaI6e5Iu2eK16xL214PadooeNRGB5jvjKRseiMK-JEMEkP677VwIbKNg8ZiAqgQUCL6SZWmeS7lOx9G9aJOA4RV4h_8EG86500mcZXVDiGrkwimY9PAEQo9EMC5bMLjZ6-TR3w2xDAxKz4NGH37Zo4_8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3">
+<p class="text-primary text-xs font-bold uppercase tracking-wider mb-1">Braids</p>
+<h3 class="text-white text-sm font-bold leading-tight">Vredenburg Braids</h3>
+</div>
+</div>
+<!-- Card 3: Modern Bob -->
+<div class="break-inside-avoid relative group overflow-hidden rounded-xl bg-surface-dark">
+<img alt="Side profile of a sharp modern bob haircut" class="h-auto w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Side profile of a sharp modern bob haircut" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6de-IKVXSHDMM3zPiKbe6ntCV-CzMRS8smLUtZedAT7err0EOmL3Lm1J3A9J9l10qh0Tgz0JZRalXq7_7QI9l2ir1xv4yng3JTpMxcWPI6xdyt8qvvQic1_HBqI3jHjOYUJk5CWwYGurt8GJ1XyMNWvBnYC_3D4zgX74KlFqhH55b7zJxrUafBbgVboZ9REZ6xsd0yOSxM6T-pRwWgOqHwAMGyJ2vkHKBkQB0ozrwCyO51KNjitZltGtyX5VoNBpnBDTO0Q4VLDA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3">
+<p class="text-primary text-xs font-bold uppercase tracking-wider mb-1">Cut</p>
+<h3 class="text-white text-sm font-bold leading-tight">Sharp Bob</h3>
+</div>
+</div>
+<!-- Card 4: Texture/Curls -->
+<div class="break-inside-avoid relative group overflow-hidden rounded-xl bg-surface-dark">
+<img alt="Woman with large voluminous natural curly hair smiling" class="h-auto w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Woman with large voluminous natural curly hair smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOPTBebPlCeDDoZleHzlhRveoIVIjd2HZvysHX0I5IUlwIO15CGnr3jimyGT_GoSdcNVls4F8r0bURRdP5M_dfs4RlcwIiR8n6mdahG0h5RIeYfyY88bxFkBLeXrgyx1aTx-T6m5dmiyegx5tb67A5N77EKIuSlnUaxrP01u6Kh1Uy46dHNUnjiEVRjQy20FQ2Dpz1J2EAAVGWYKwwBP31DnRqObI1DipAO4F6GgdLREFMkBbidiYfWvGJ8TVMzrQm1Nt79sqe0QA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3">
+<p class="text-primary text-xs font-bold uppercase tracking-wider mb-1">Natural</p>
+<h3 class="text-white text-sm font-bold leading-tight">Curl Revive</h3>
+</div>
+</div>
+<!-- Card 5: Updo -->
+<div class="break-inside-avoid relative group overflow-hidden rounded-xl bg-surface-dark">
+<img alt="Elegant bridal hair updo with floral accessories" class="h-auto w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Elegant bridal hair updo with floral accessories" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDGDLlwgDzIy4xFXHLwFxI2xYIAFcLxZs4IUsN68amWOgOlybHZKtoYQ0J8gvZZldBL8hTgJD9DT-l8_jZ5NA8SM_23_m9XAt_4UAUlIeVU60HzQVBSIbYW0Vvf7-VjazaODKoh5_GHPYfuEerpOUNPoA1-_Tf81aZqa-6HQaRzlCeZ8SahLKEGp2eKflwyn7-3p24TqE6w4aKz_zseDKVurKsvDs3DLKWUGT2DrDWGVwn1IfJdPb2vN1kDqb5LauhkiC0e-7bvjI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3">
+<p class="text-primary text-xs font-bold uppercase tracking-wider mb-1">Occasion</p>
+<h3 class="text-white text-sm font-bold leading-tight">Bridal Elegance</h3>
+</div>
+</div>
+<!-- Card 6: Color -->
+<div class="break-inside-avoid relative group overflow-hidden rounded-xl bg-surface-dark">
+<img alt="Back view of long wavy blonde hair highlights" class="h-auto w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Back view of long wavy blonde hair highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtbe0eDcu5ExHB5HQrbUcoIIK-_OEeRM1ZyahwDYlNCtAJp6ZtOrVGPIGIlbkpkruasP441Qluyq4zKCHn5NoAKZQJnPEBDRd933xJWeoMlurKeF4IRo_OlqnuhLRuMA4sdJxfx6aA3iODd4QkBB6iApELvjxHKj3HPQo4XV7rAYCXuHfW9cXdthCMwcIQuSVv1YUyZkq-5m0p-Utg7ptx-bOE9Vf640jynll_Ha2GiW3mQBzBZisph_D8iahfK67DLooqcgzByLI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3">
+<p class="text-primary text-xs font-bold uppercase tracking-wider mb-1">Color</p>
+<h3 class="text-white text-sm font-bold leading-tight">West Coast Blonde</h3>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom CTA Section -->
+<div class="mt-8 px-6 text-center">
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Ready for your transformation?</h3>
+<p class="text-slate-600 dark:text-gray-400 text-sm mb-6">Book your appointment with our expert stylists today.</p>
+</div>
+</main>
+<!-- Floating Action Button -->
+<button class="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-primary text-slate-900 shadow-[0_0_20px_rgba(19,236,91,0.4)] transition-transform hover:scale-110 active:scale-95">
+<span class="material-symbols-outlined font-bold" style="font-size: 28px;">calendar_month</span>
+</button>
+<!-- Optional: Bottom Navigation Bar Placeholder if needed, but FAB is cleaner for this request -->
+</body></html>
